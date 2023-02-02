@@ -1,0 +1,44 @@
+body {
+  font-size: 16px;
+  font-family: var(--font-family-body);
+  font-weight: 400;
+  height: 100%;
+  line-height: 30px;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #686868;
+  background-color: #ffffff;
+}
+
+.navigation{
+  justify-content: center;
+  position:static;
+  flex-direction: row;
+  display: block;
+}
+
+nav.dropdown > ul > li > a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  display: block;
+  color: #f68503;
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-area{
+  padding: 20px 20px 20px 20px;
+}
+
+.img-logo{
+  display: block;
+}
+
+header{
+  display: block;
+}

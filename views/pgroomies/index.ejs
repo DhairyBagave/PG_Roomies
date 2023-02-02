@@ -1,0 +1,25 @@
+<% layout('layouts/boilerplate')%>
+<body>
+<h1>All PG Rooms</h1>
+<div>
+    <a href="/pgroomies/new">Add PG Rooms</a>
+</div>
+<% for (let pg of pgroomies){%>
+<div class="card mb-3" >
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid" alt="" src="<%=pg.image%>">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"><%= pg.title %> </h5>
+                <p class="card-text"><%= pg.description %></p>
+                <p class="card-text">
+                    <small class="text-muted"><%= pg.location%></small>
+                </p>
+                <a class="btn btn-primary" href="/pgroomies/<%=pg._id%>">View <%=pg.title%></a>
+            </div>
+        </div>
+    </div>
+</div>
+<% }%>
